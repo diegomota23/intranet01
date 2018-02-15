@@ -9,6 +9,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Intranet</title>
+        
+        @yield('links')
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -73,21 +75,7 @@
             </nav>
      
         </div>
-               <div class="container-meio">
-                <div class="corpo">
-                    <div class="content-esquerdo"></div>
-                    <div class="content-direito">
-                        <div class="menu-navegacao"></div>
-                        <div class="content-meio">
-                            <div class="meio"></div>
-                            <div class="menu-direito"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rodape"></div>
-
-            </div>
-
+            @yield('content')
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
     </body>

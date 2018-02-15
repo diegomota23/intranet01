@@ -1,0 +1,47 @@
+
+/* 
+    Created on : 15/02/2018, 12:36:15
+    Author     : suporte
+*/
+/* laiaute pertencente principal do meio*/
+.container-meio{
+    height: 100%;
+}
+.corpo{border-style:  dashed;
+       height: 87%;
+}   
+.content-esquerdo{
+    float: left;
+    border-style:  dashed;
+    width: 14%;
+    height: 101%;
+}
+.content-direito{
+    float:  right;
+    border-style:  dashed;
+    height: 100%;
+    width: 86%;
+}
+.menu-navegacao{
+    border-style:  dashed;
+    height: 7%;
+}
+.content-meio{
+    height:  100%;
+    width: 100%;
+}
+.meio{
+    float:  left;
+    border-style:  dashed;
+    height: 95%;
+    width: 86%;
+}
+.menu-direito{
+    float:  right;
+    border-style:  dashed;
+    height: 95%;
+    width: 14%;
+}
+.rodape{
+
+}
