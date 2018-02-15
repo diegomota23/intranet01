@@ -7,15 +7,28 @@
 .container-meio{
     height: 100%;
 }
-.corpo{border-style:  dashed;
+.fundo-meio{
+
+}
+.corpo{
        height: 87%;
-}   
+}
+/*modifica a parte esquerda*/
 .content-esquerdo{
     float: left;
     border-style:  dashed;
     width: 14%;
     height: 101%;
 }
+.slogan{
+       margin-top: -3%;
+       height: 9%;
+}
+.moca{
+      height: 22%;
+    margin: 8% 14%;
+}
+
 .content-direito{
     float:  right;
     border-style:  dashed;
@@ -24,7 +37,7 @@
 }
 .menu-navegacao{
     border-style:  dashed;
-    height: 7%;
+    height: 15%;
 }
 .content-meio{
     height:  100%;
@@ -33,14 +46,14 @@
 .meio{
     float:  left;
     border-style:  dashed;
-    height: 95%;
-    width: 86%;
+    height: 86%;
+    width: 83%;
 }
 .menu-direito{
     float:  right;
     border-style:  dashed;
-    height: 95%;
-    width: 14%;
+    height: 86%;
+    width: 17%;
 }
 .rodape{
 
