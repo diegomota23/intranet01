@@ -1,7 +1,7 @@
 
 /* 
     Created on : 15/02/2018, 12:36:15
-    Author     : suporte
+    Author     : diego mota
 */
 /* laiaute pertencente principal do meio*/
 .container-meio{
@@ -11,33 +11,32 @@
 
 }
 .corpo{
-       height: 87%;
+    height: 87%;
 }
 /*modifica a parte esquerda*/
 .content-esquerdo{
     float: left;
-    border-style:  dashed;
     width: 14%;
     height: 101%;
 }
 .slogan{
-       margin-top: -3%;
-       height: 9%;
+    height: 9%;
 }
 .moca{
-      height: 22%;
+    height: 22%;
     margin: 8% 14%;
 }
 
 .content-direito{
     float:  right;
-    border-style:  dashed;
     height: 100%;
     width: 86%;
 }
 .menu-navegacao{
-    border-style:  dashed;
-    height: 15%;
+    height: 7%;
+}
+.pri{
+    margin-left: 11%;
 }
 .content-meio{
     height:  100%;
@@ -46,15 +45,86 @@
 .meio{
     float:  left;
     border-style:  dashed;
-    height: 86%;
-    width: 83%;
+    height: 87%;
+    width: 81%;
 }
+/*fim parte esquerda*/
+
+/*leiaute da barra direita*/
 .menu-direito{
     float:  right;
     border-style:  dashed;
-    height: 86%;
-    width: 17%;
+    height: 87%;
+    width: 19%;
 }
+.t-funcoes{
+    height: 30%;
+    width: 100%;
+}
+.t-funcoes tr th{}
+.suporte{background-color: #2ab27ba1;}
+.patrimonio{background-color: #cbb956a3;}
+.almoxarifado{background-color: #a944428c;}
+.lista-tel{background-color: #3c763d9e;}
+.email{background-color: #8a6d3b9e;}
+/*fim barra direita*/
 .rodape{
 
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+    .container-meio{
+        height: 83%;
+    }
+    .fundo-meio{
+
+    }
+    .corpo{
+        height: 87%;
+    }
+    /*modifica a parte esquerda*/
+    .content-esquerdo{
+        float: left;
+        width: 14%;
+        height: 101%;
+    }
+    .slogan{
+        height: 9%;
+    }
+    .moca{
+        height: 22%;
+        margin: 8% 14%;
+    }
+
+    .content-direito{
+        float:  right;
+        height: 100%;
+        width: 86%;
+    }
+    .menu-navegacao{
+        height: 7%;
+    }
+    .pri{
+        margin-left: 11%;
+    }
+    .content-meio{
+        height:  100%;
+        width: 100%;
+    }
+    .meio{
+        float:  left;
+        border-style:  dashed;
+        height: 87%;
+        width: 81%;
+    }
+    .menu-direito{
+        float:  right;
+        border-style:  dashed;
+        height: 87%;
+        width: 19%;
+    }
+    .rodape{
+
+    }
 }
