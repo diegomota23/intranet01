@@ -6,55 +6,55 @@
 <script type="text/javascript" src="<?php echo asset('varial/jquery-ui.js') ?>"></script>
 
 <script>
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  
-  /* Brazilian initialisation for the jQuery UI date picker plugin. */
+$(function () {
+    $("#datepicker").datepicker();
+});
+
+/* Brazilian initialisation for the jQuery UI date picker plugin. */
 /* Written by Leonildo Costa Silva (leocsilva@gmail.com). */
-( function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
+(function (factory) {
+    if (typeof define === "function" && define.amd) {
 
-		// AMD. Register as an anonymous module.
-		define( [ "../widgets/datepicker" ], factory );
-	} else {
+        // AMD. Register as an anonymous module.
+        define(["../widgets/datepicker"], factory);
+    } else {
 
-		// Browser globals
-		factory( jQuery.datepicker );
-	}
-}( function( datepicker ) {
+        // Browser globals
+        factory(jQuery.datepicker);
+    }
+}(function (datepicker) {
 
-datepicker.regional[ "pt-BR" ] = {
-	closeText: "Fechar",
-	prevText: "&#x3C;Anterior",
-	nextText: "Próximo&#x3E;",
-	currentText: "Hoje",
-	monthNames: [ "Janeiro","Fevereiro","Março","Abril","Maio","Junho",
-	"Julho","Agosto","Setembro","Outubro","Novembro","Dezembro" ],
-	monthNamesShort: [ "Jan","Fev","Mar","Abr","Mai","Jun",
-	"Jul","Ago","Set","Out","Nov","Dez" ],
-	dayNames: [
-		"Domingo",
-		"Segunda-feira",
-		"Terça-feira",
-		"Quarta-feira",
-		"Quinta-feira",
-		"Sexta-feira",
-		"Sábado"
-	],
-	dayNamesShort: [ "Dom","Seg","Ter","Qua","Qui","Sex","Sáb" ],
-	dayNamesMin: [ "Dom","Seg","Ter","Qua","Qui","Sex","Sáb" ],
-	weekHeader: "Sm",
-	dateFormat: "dd/mm/yy",
-	firstDay: 0,
-	isRTL: false,
-	showMonthAfterYear: false,
-	yearSuffix: "" };
-datepicker.setDefaults( datepicker.regional[ "pt-BR" ] );
+    datepicker.regional[ "pt-BR" ] = {
+        closeText: "Fechar",
+        prevText: "&#x3C;Anterior",
+        nextText: "Próximo&#x3E;",
+        currentText: "Hoje",
+        monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+            "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+        monthNamesShort: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+            "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+        dayNames: [
+            "Domingo",
+            "Segunda-feira",
+            "Terça-feira",
+            "Quarta-feira",
+            "Quinta-feira",
+            "Sexta-feira",
+            "Sábado"
+        ],
+        dayNamesShort: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+        dayNamesMin: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+        weekHeader: "Sm",
+        dateFormat: "dd/mm/yy",
+        firstDay: 0,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ""};
+    datepicker.setDefaults(datepicker.regional[ "pt-BR" ]);
 
-return datepicker.regional[ "pt-BR" ];
+    return datepicker.regional[ "pt-BR" ];
 
-} ) );
+}));
 </script>
 
 @endsection
@@ -73,7 +73,7 @@ return datepicker.regional[ "pt-BR" ];
                             <a href="#"><img class="slogan" src="{{ asset('varial/img/home/slogan.png') }}"></a> 
                             <a href="#"><img class="moca" src="{{ asset('varial/img/home/moca.png') }}"></a> 
                             <ul class="nav nav-pills nav-stacked" role="tablist">
-                                <li class="active"><a href="#">Home</a></li>
+                                <li class="active"><a href="#">Intranet</a></li>
                                 <li><a href="#">HTML</a></li>
                                 <li><a href="#">CSS</a></li>
                                 <li><a href="#">About</a></li>        
@@ -96,16 +96,33 @@ return datepicker.regional[ "pt-BR" ];
                                 <div class="menu-direito">
                                     <table class="t-funcoes">
                                         <tr>
-                                            <th class="suporte"></th>
-                                            <th class="patrimonio"></th>
-                                            <th class="almoxarifado"></th>
+                                            <th class="suporte" title="Precione para registrar um chamado com a T.I">
+                                                <img src="{{ asset('varial/img/home/suporte.png') }}" title="Precione para registrar um chamado com a T.I"><br>
+                                                Suporte
+                                            </th>
+                                            <th class="patrimonio" title="Precione para gerenciar o sistema de patrimonio">
+                                                <img src="{{ asset('varial/img/home/patrimonio.png') }}" title="Precione para gerenciar o sistema de patrimonio"><br>
+                                                Patrimonio
+                                            </th>
+                                            <th class="email" title="Precione para gerenciar os e-mails">
+                                                <img src="{{ asset('varial/img/home/email.png') }}" title="Precione para gerenciar os e-mails"><br>
+                                                E-Mail
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <th class="lista-tel"></th>
-                                            <th class="email"></th>
+                                            <th class="lista-tel" title="Precione para verificar a lista telefonica">
+                                                <img src="{{ asset('varial/img/home/tel.png') }}" title="Precione para verificar a lista telefonica"><br>
+                                                Telefone
+                                            </th>
+                                            <th class="almoxarifado" title="Precione para gerenciar o sistema de almoxarife">
+                                                <img  src="{{ asset('varial/img/home/almoxarife.png') }}" title="Precione para gerenciar o sistema de almoxarife"><br>
+                                                Almoxarife
+                                            </th>
                                         </tr>
                                     </table>
-                                        Date: <div id="datepicker"></div>
+                                    <div class="calendario">
+                                        <div id="datepicker"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

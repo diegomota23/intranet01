@@ -53,24 +53,38 @@
 /*leiaute da barra direita*/
 .menu-direito{
     float:  right;
-    border-style:  dashed;
     height: 87%;
     width: 19%;
 }
 .t-funcoes{
     height: 30%;
     width: 100%;
+    color: #fcfefd;
+    text-align:center;
 }
-.t-funcoes tr th{}
-.suporte{background-color: #2ab27ba1;}
-.patrimonio{background-color: #cbb956a3;}
-.almoxarifado{background-color: #a944428c;}
-.lista-tel{background-color: #3c763d9e;}
-.email{background-color: #8a6d3b9e;}
-/*fim barra direita*/
-.rodape{
+.t-funcoes tr th img{
+    border-style:  dashed;
+    margin-top: 3%;
+    height: 57%;
+}
+.suporte{width: 32%;height: 51%;background-color: #2ab27ba1;}
+.patrimonio{width: 32%;height: 51%;background-color: #cbb956a3;}
+.almoxarifado{width: 32%;height: 51%;background-color: #a944428c;}
+.lista-tel{width: 32%;height: 51%;background-color: #3c763d9e;}
+.email{width: 32%;height: 51%;background-color: #8a6d3b9e;}
 
+/*quando o mouse passar por cima*/
+.suporte:hover{background-color: #2ab27be3;}
+.patrimonio:hover{background-color: #cbb956de;}
+.almoxarifado:hover{background-color: #a94442ba;}
+.lista-tel:hover{background-color: #3c763dd6;}
+.email:hover{background-color: #8a6d3bc9;}
+
+.calendario{
+    margin-top: 7%;
 }
+/*fim barra direita*/
+.rodape{height: 11%;background-color: #ddd;margin-top: 1%;}
 
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) { 
