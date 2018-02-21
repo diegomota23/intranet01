@@ -6,6 +6,9 @@
 <script type="text/javascript" src="<?php echo asset('varial/jquery-ui.js') ?>"></script>
 
 <script>
+onload=function(){
+document.body.style.visibility="visible";
+}    
 $(function () {
     $("#datepicker").datepicker();
 });
@@ -96,8 +99,8 @@ $(function () {
                                 <div class="menu-direito">
                                     <table class="t-funcoes">
                                         <tr>
-                                            <th class="suporte" title="Precione para registrar um chamado com a T.I">
-                                                <img src="{{ asset('varial/img/home/suporte.png') }}" title="Precione para registrar um chamado com a T.I"><br>
+                                            <th class="suporte"  title="Precione para registrar um chamado com a T.I"><a target=“_blank” href="{{ route('suporte') }}">
+                                                <img src="{{ asset('varial/img/home/suporte.png') }}" title="Precione para registrar um chamado com a T.I"></a><br>
                                                 Suporte
                                             </th>
                                             <th class="patrimonio" title="Precione para gerenciar o sistema de patrimonio">
@@ -127,7 +130,10 @@ $(function () {
                             </div>
                         </div>
                     </div>
-                    <div class="rodape"></div>
+                    <div class="rodape">
+                        <p>Av. IX, 315 - Jereissati II, Maracanaú - CE, 61901-090 Telefone: (85) 3371-6162</p>
+                        <p>Desenvolvido por Cyber Tec Informatica</p>
+                    </div>
 
                 </div>
             </div>

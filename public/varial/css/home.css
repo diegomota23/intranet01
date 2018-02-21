@@ -4,6 +4,8 @@
     Author     : diego mota
 */
 /* laiaute pertencente principal do meio*/
+body {visibility:hidden}
+
 .container-meio{
     height: 100%;
 }
@@ -45,7 +47,7 @@
 .meio{
     float:  left;
     border-style:  dashed;
-    height: 87%;
+    height: 89%;
     width: 81%;
 }
 /*fim parte esquerda*/
@@ -84,7 +86,16 @@
     margin-top: 7%;
 }
 /*fim barra direita*/
-.rodape{height: 11%;background-color: #ddd;margin-top: 1%;}
+.rodape{
+    height: 11%;background-color: #ddd;margin-top: 1%;
+}
+.rodape p{
+    text-align:  center;
+    margin: 0;
+    position:  relative;
+    top: 16%;
+    left: 9%;
+}
 
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) { 
