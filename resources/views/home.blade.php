@@ -99,7 +99,7 @@ $(function () {
                                 <div class="menu-direito">
                                     <table class="t-funcoes">
                                         <tr>
-                                            <th class="suporte"  title="Precione para registrar um chamado com a T.I"><a target=“_blank” href="{{ route('suporte') }}">
+                                            <th class="suporte"  title="Precione para registrar um chamado com a T.I"><a target=“_blank” href="http://localhost/projeto01/projeto0.1/vendor/glpi/">
                                                 <img src="{{ asset('varial/img/home/suporte.png') }}" title="Precione para registrar um chamado com a T.I"></a><br>
                                                 Suporte
                                             </th>
